@@ -99,7 +99,7 @@ def save_metrics(metrics: Dict[str, float], metrics_path: str) -> None:
 def main() -> None:
     try:
         # Load model
-        clf = load_model(model_path='model.pkl')
+        clf = load_model(model_path='models/model.pkl')
         
         # Load testing data
         X_test, y_test = load_data(data_path='./data/features/test_bow.csv')
